@@ -11,4 +11,10 @@ class perro():
     def defensa():
         print("Te voy a morder prro!")
 
+
+class chihuahua():
+    x=0
+
+
+
     
