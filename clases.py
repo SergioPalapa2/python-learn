@@ -12,7 +12,7 @@ class grupoAnimal():#la palabra class crea la "plantilla"
     def __init__(self): #Metodo especial para controlar que pasa en la creacion
         print("Objeto construido")
 
-    def __del__(self): #Metodo especial para controlar que pasa en la destruccion
+    def __del__(self): #Metodo especigital para controlar que pasa en la destruccion
         print("Objeto destruido", self.x)
     
 
@@ -35,4 +35,4 @@ print("dir", dir(an))
 print("type x", type(an.x))
 print("type grupo ",type(an.grupo))
 
-Print("Siguiente camino: Instancias Multiiples")
+print("Siguiente camino: Instancias Multiiples")
