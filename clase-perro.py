@@ -5,7 +5,7 @@ class perro():
     patas=4
     cola=1
 
-    def ladrido():
+    def ladrido(self):
         print("guau guau prro")
 
     def defensa():
@@ -14,6 +14,12 @@ class perro():
 
 class chihuahua():
     x=0
+
+
+fido=perro()
+print(fido.ladrido())
+print("Perrote")
+
 
 
 
