@@ -1,4 +1,4 @@
-print("Calculadora")
+print("Pagos")
 
 bruto=input("Salario por hora: ")
 hours=input("Horas laboradas: ")
