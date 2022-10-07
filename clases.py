@@ -15,8 +15,6 @@ class grupoAnimal():#la palabra class crea la "plantilla"
     def __del__(self): #Metodo especigital para controlar que pasa en la destruccion
         print("Objeto destruido", self.x)
     
-
-
     def grupo(self): #metodo
         self.x=self.x+1
         print("Hasta ahora: ", self.x)
@@ -35,4 +33,6 @@ print("dir", dir(an))
 print("type x", type(an.x))
 print("type grupo ",type(an.grupo))
 
-print("Siguiente camino: Instancias Multiiples")
+print("Siguiente camino: Instancias Multiples")
+
+
