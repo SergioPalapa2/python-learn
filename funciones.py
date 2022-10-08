@@ -1,27 +1,29 @@
 from sre_constants import SRE_FLAG_IGNORECASE
+from turtle import clear
+
+#Una funcion es una pieza de codigo que realiza una accion con o sin datos de entrada y devuelve algo
+# Una funcion es reusable
+#Existen dos tipos de funciones en ptyton:
+#Propias (print(), input(), type()...)
+#Defindas por el programador que usa despues (nuevas palabras reservadas)
 
 
+#Definicion de funciones
 def saludo():
-    print("Hola muno")
-
-
-
-saludo()
-saludo()
-saludo()
-
+    print("Hola mundo")
 
 #max() devielve el valor que tenga mayor valor
 #min() devuelve el elemento con el menos valor
 
-#uncion con parametros
+
+#Funcion con parametros
 def saludito(nombre):
     print("Hola", nombre)
 
 nom="sergio"
 
+saludo()
 saludito(nom)
-
 
 #retorno de valores
 #usamos paalbra reservada return
@@ -35,10 +37,9 @@ print(suma(3,89))
 #una funcion que no devuelve un valor es una VOID FUNCTION
 #una uncion que devuelve un valor es una FRUITUL
 
-
-#parrafos que capturen una idea y nombralo
-#si algo es complejo, dividelo en piezas mas pequeñas(funciones)
-#haz librerias de de cosas que reutiilices constantemente
-
+#NOTAS:
+#-Parrafos que capturen una idea y nombralo
+#-Si algo es complejo, dividelo en piezas mas pequeñas(funciones)
+#-Haz librerias de de cosas que reutiilices constantemente
 
 

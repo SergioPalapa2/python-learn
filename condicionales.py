@@ -1,3 +1,6 @@
+#CONDICIONALES
+#Las unciones condcionales ejjecutan ciertos bloques de codigo dependiendo de si se cumplen ciertas condiciones
+
 #Comparadores
 # < > >= <= == !=
 
@@ -5,7 +8,7 @@ x=10
 y=25
 
 if y>x: #condicional IF
-    print("el valor de y es mayor que x, muy bien hermoso \n")
+    print("El valor de y es mayor que x, muy bien hermoso \n")
 
 print("Continuamos -------> \n")
 
@@ -25,8 +28,9 @@ elif c==10:
     print("es igual")
 
 
-# try y except como forma de compensar errores de ejecucion
-
+# Usamos try y except como forma de compensar errores de ejecucion
+#try intentara ejecutar un bloque de codigo
+# y si existe algun error en esa ejecucion except ejecutara otro bloque de codigo 
 val="hola python"
 try:
     int(val)
