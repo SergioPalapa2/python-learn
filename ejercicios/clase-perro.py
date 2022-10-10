@@ -11,6 +11,7 @@ class perro(): #plantilla para crear perro
     fecha=""
     sexo=""
     color=""
+    fecha_nac=""
     def __init__(self):
         print("Nuevo perro")
 
@@ -26,8 +27,22 @@ class chihuahua(perro): #plantilla que crea un chihuahua heredando de perro
 
     def __init__(self):
         print("Nuevo perro chihuahua")
+        fecha_nac=datetime.now()
+        print("Nacido en ", fecha_nac)
+
     def ladridoCh(self):
         print("wawawawawawawawawawawawawa")
+
+
+
+class doberman(perro):
+    tamaño="medio-grande"
+    def __init__(self):
+        print("Nuevo perro doberman")
+    def ladridoD(self):
+        print("bark bark bark bark")
+
+    
 
 
 #main
@@ -37,13 +52,19 @@ perro1.nombrar("Perro prueba1")
 print(perro1.ladrido())
 
 
-perro_chih=chihuahua()
+perro_chih=chihuahua()#nuevo objeto chihuahua
 print("Patas:",perro_chih.patas)
 print("Ojos",perro_chih.ojos)
 print("Tamaño:",perro_chih.tamaño)
 perro_chih.nombrar("Nachito")
 perro_chih.ladridoCh()
-##perro_chih.ladrido()
+#perro_chih.ladrido()
 perro_chih.sexo="M"
 print("El sexo del perro es: ",perro_chih.sexo)
+
+
+
+perro_d=doberman()
+print(perro_d.ladridoD())
+
 
