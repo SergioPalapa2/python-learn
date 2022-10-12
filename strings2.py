@@ -51,6 +51,9 @@ print(dir(nombre)) #dir: lista de atributos validos del objeto
 boleta="2012350653"
 print(boleta.find("2012"))
 print(boleta.find("3"))
+#Por default comienza la busqueda en el indice 0
+#Se puede indicar el inicio de la busqueda colocando el indice como segundo argumento, ej cadena.find("A",5)
+#Se puede indicar hasta donde se puede realizar la busqueda, colocando un tercer argumento, ej cadena.find("A",5,10)
 
 
 
@@ -77,7 +80,10 @@ print(newstr)
 #rstrip() remueve el espacio por la derecha
 #strip() remueve ambos espacios, al inicio y al final
 
-print("Aqui va un ejemplo de remocion de espacios")
+cadena2="  sergio  "
+print(cadena2)
+print(cadena2.lstrip())
+print(cadena2.rstrip())
 
 
 #Prefijos
@@ -88,7 +94,24 @@ print(line.startswith('P'))
 print(line.startswith('M'))
 
 
-print("- PARSEO Y EXTRACCION....pendiente")
+#Parseo y extraccion
+#Se pueden combinar las tecnicas anteriores para realizar una revision exhaustiva y extraccion de informacion
+
+#Ejemplo: Extraer el dominio de la cadena
+data="From stephen.marqard@uct.ac.za Sat Jan 5 09:14:23 2022"
+print(data)
+arrpos=data.find("@") #encontramos la posicion del @
+print("Posicion de @ en:",arrpos)
+sppos=data.find(" ",arrpos) #encontramos la posicion del espacio despues del arroba
+print("Posicion del espacio en:",sppos) 
+host=data[arrpos+1:sppos]
+print("El host es:", host)
+
+
+
+#NOTA: En python 3 todas las cadenas con UNICODE
+
+
 
 
 

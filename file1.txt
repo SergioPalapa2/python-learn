@@ -1,0 +1,8 @@
+datos del estudiante
+
+Nombre:Sergio
+Apellido: Palapa
+Carrera: IC
+Curso: Python
+Estatus:Activo
+Observaciones: Es guapo
