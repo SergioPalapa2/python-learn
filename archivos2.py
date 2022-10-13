@@ -23,9 +23,23 @@ for linea in fileo:
     if linea.startswith("Nombre"):
         print(linea)
 
+#Notas:
+#- Podemos usar la funcion rstrip() para quitar nuevas lineas vacias
+#- O mediante if not line.startswith(): continue
+cvhandler=open("file2.txt")
+for linea in cvhandler:
+    linea=linea.rstrip()
+    print(linea) #Imprime las lineas pero separadas por un espacio
 
-#5:27
-#Continuara...
-print("Continuara...")
-        
+
+
+#Usamos IN para realizar busquedas
+cvhandler2=open("file2.txt")
+for linea in cvhandler2:
+    linea=linea.rstrip()
+    if not 'Diseno' in linea:
+        continue #finaliza el loop en curso y pasa al siguiente
+    print(linea) 
+
+
 
