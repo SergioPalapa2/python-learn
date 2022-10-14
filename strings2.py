@@ -5,6 +5,8 @@
 #- En caso de definir un segundo valor mas grande que la cadena solo terminara en el ultimo valor
 
 
+
+
 nombre="Sergio Palapa"
 print(nombre[0:6]) #Solo imprime desde posicion 0 a 5
 #print(nombre+6) //no es posible concatenar cadenas con numeros
