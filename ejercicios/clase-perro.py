@@ -22,6 +22,7 @@ class perro(): #plantilla para crear perro
         self.nombre=nom
         print("Nombre:", nom)
 
+
 class chihuahua(perro): #plantilla que crea un chihuahua heredando de perro 
     tamaño="mini"
 
@@ -34,23 +35,23 @@ class chihuahua(perro): #plantilla que crea un chihuahua heredando de perro
         print("wawawawawawawawawawawawawa")
 
 
-
-class doberman(perro):
+class doberman(perro):  #plantilla para perro doberman
     tamaño="medio-grande"
     def __init__(self):
         print("Nuevo perro doberman")
     def ladridoD(self):
         print("bark bark bark bark")
 
-    
+celdas=[] #se declara la variable de celda
 
+def perrera(perro):
+    celdas.append(perro)
 
 #main
 
 perro1=perro() #nuevo objeto perro
 perro1.nombrar("Perro prueba1")
 print(perro1.ladrido())
-
 
 perro_chih=chihuahua()#nuevo objeto chihuahua
 print("Patas:",perro_chih.patas)
@@ -68,3 +69,11 @@ perro_d=doberman()
 print(perro_d.ladridoD())
 
 
+
+
+perrera(perro1)
+perrera(perro_chih)
+perrera("perro desconocido")
+
+for perrito in celdas:
+    print("Celda ", perrito)
