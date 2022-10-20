@@ -1,4 +1,4 @@
-datos del estudiante
+Datos del estudiante
 
 Nombre:Sergio
 Apellido: Palapa
