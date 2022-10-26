@@ -4,6 +4,9 @@
 #lista: coleccion lineal y ordenada
 #diccionario: Conjunto de elementos con su propia etiqueta
 
+from wsgiref.validate import validator
+
+
 diccionario=dict() #funcion que crea un diccionario vacio
 diccionario['edad']=23
 diccionario['mes']="septembre"
@@ -29,6 +32,25 @@ dict["Sat"] = 2
 dict["Sun"] = 9
 
 print(dict)
+
+
+#####################################################
+################       METODOS     ##################
+# len()
+# del dicc[k] //Elimina el objeto seleciconado
+# k in dicc  //Devuelve true si existe el objeto en el diccionario
+# dicc.keys()  //Devuelve todas la claves del diccionario
+# dicc.values()  //Devuelve todos los valores del diccionario
+# dicc.items()  //Devuelve la tupla clave-valor
+# dicc.clear()  //Borra todos los items del diccionario
+# dicc.copy()  //Devuelve la copia del diccionario
+# dicc2.upate(dicc)  //Fusiona las entradas de de dicc2 en dicc
+# dicc.popitem()  //Devuelve y elimina un par arbitrario clave-validator
+
+
+
+
+
 
 
 
