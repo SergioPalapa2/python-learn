@@ -34,3 +34,23 @@ print(rango)
 #Algoritmo: conjunto de reglas usadas para resolver un problema
 #Estructuras de datos: Formas de organizar datos en una computadora
 
+
+
+
+#####################################################
+################       METODOS     ##################
+# lista.append(item) //agrega el elemento al final de la lista
+# lista.count(item)  //realiza el conteo del numero de veces que aparece un elementos
+# lista.extend(lista)  //realiza un duplicado de la lista
+# lista.index(item,inicio,final)  //Devuelve el indice del elemento, devuelve el primero que encuenta o si se encuentra en el rango especificado
+# lista.insert(indice, item)  //se agrega un elemento en el indice indicado
+# lista.pop() //devuelve y elimina el item situado mas a la derecha (contrario a append), es posible pasar como argumento un indice
+# lista.remove() //elimina el primer item de la lista
+# lista.reverse()  //invierte el orden de los items
+# lista.sort()  //ordena de menor a mayor los items de la lista
+# lista.clear()  //elimina los elementos de una lista y la devuelve vacia
+# lista.copy()  //Devuelve una copia simple (equivale a lista(:))
+
+
+
+

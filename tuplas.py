@@ -39,4 +39,6 @@ print("Sguiente quest: Comparar y ordenar tuplas")
 print("Continuara...")
 
 #####################################################
-################       METODOS     ##################
+# ################       METODOS     ##################
+# count()   //Devuelve el numero de veces que se encuentra un objeto (lista.count(1))
+# index(lista.index())  //Devuelve el indice o posicion de el elemento indicado
