@@ -23,3 +23,18 @@ match2=re.findall('^F.+?:', string2)
 print(match2)
 
 
+#Forma de extraer informacion separando la porcion que sera extraida, usando ()
+string3="From stephen.marquard@uct.ac.za Sat Jan 5 09:14:26 2012"
+match3=re.findall('\S+@\S+',string3)
+print(match3)
+#usando ()
+matchb=re.findall('^From (\S+@\S+)',string3)
+print(matchb)
+
+
+#ejercicio
+s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
+lst = re.findall('\\S+@\\S+', s)
+print(lst)
+
+
