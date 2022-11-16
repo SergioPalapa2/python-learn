@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime #libreria que pregunta la hora al sistema
 
 class perro(): #plantilla para crear perro
     #atributos
@@ -48,10 +48,11 @@ def perrera(perro):
     celdas.append(perro)
 
 #main
-
 perro1=perro() #nuevo objeto perro
 perro1.nombrar("Perro prueba1")
 print(perro1.ladrido())
+
+
 
 perro_chih=chihuahua()#nuevo objeto chihuahua
 print("Patas:",perro_chih.patas)
@@ -77,3 +78,5 @@ perrera("perro desconocido")
 
 for perrito in celdas:
     print("Celda ", perrito)
+
+print(perro1)
