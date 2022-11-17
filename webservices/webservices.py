@@ -118,12 +118,12 @@
 import xml.etree.ElementTree as ET
 
 data='''<person>
-    <name>chuck</name>
-    <phone type="inil">
-        7343034456
-    </phone>
-    <email hide="yes"/>
-    </person>'''
+     <name>chuck</name>
+     <phone type="inil">
+         7343034456
+     </phone>
+     <email hide="yes"/>
+</person>'''
 
 tree=ET.fromstring(data) #objeto del cual se puden hacer consultar y sacar informacion
 print("Name:", tree.find('name').text) #texto
@@ -141,8 +141,7 @@ input='''<stuff>
             <name>trent</name>
         </user>
     </users>
-</stuff'''
-
+</stuff>'''
 
 stuff=ET.fromstring(input)
 primero=stuff.findall('users/user')
