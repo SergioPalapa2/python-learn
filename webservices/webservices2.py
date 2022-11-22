@@ -51,3 +51,5 @@ for item in exp:
     print("Nombre",item["name"])
     print("ID",item["id"])
     print("Atrib",item["x"])
+
+
