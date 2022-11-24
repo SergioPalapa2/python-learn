@@ -19,3 +19,23 @@ print("US floor:", usf)
 #Atributo: Datos en la clase
 #Instancia: Uso particular de una clase
 
+class partyAnimal:
+    x=0
+    def party(self):
+        self.x=self.x+1
+        print("So far", self.x)
+    
+
+an=partyAnimal()
+
+an.party()
+an.party()
+an.party()
+
+
+#dir() //Encontrar los metodos asociados a un objeto
+# con _ son usados por python mismo
+
+print(type(an)) #dir es similar a typer. Se indica "algo" de un objeto
+print(dir(an))
+
