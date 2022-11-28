@@ -11,8 +11,6 @@ def reverse_alternate(s):
 
 
 
-
-
     
 
 
