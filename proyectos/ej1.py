@@ -12,7 +12,19 @@ def arithmetic_arranger(lista):
 
 
 for op in prueba:
-    print(op)
+    #en cada iteracion se tiene una operacion en forma de cadena de texto
+    ops=op.split()
+    bigger=0
+    if len(ops[0])>=len(ops[2]):
+        bigger=len(ops[0])
+    else:
+        bigger=len(ops[2])
+
+    print(bigger)
+
+
+
+    
 
 
 
