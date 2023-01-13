@@ -18,6 +18,8 @@ print("Here we go ",nom)
 
 
 
-
+#tipos de datos
+#None = nulo
+#float = punto flotante
 
 

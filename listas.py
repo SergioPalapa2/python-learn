@@ -10,6 +10,11 @@ computacion1=['POO', 'Circuitos logicos', 'Electronica analogica']
 materias=[troncoc, matematicas, computacion1]
 print(materias)
 
+#declaracion de listas
+nueva_lista=list()
+
+
+
 c=0
 for mat in troncoc:
     print(mat)
