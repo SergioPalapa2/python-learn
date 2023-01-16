@@ -3,10 +3,10 @@
 #Toma un segunda argumento, si es "true" se mostrara el resultado.
 
 #Errores
-#TODO: "Error: To many problems." si hay mas de 5 operaciones.
-#TODO: "Error: Operator must be '+' or '-'." si el operador difiere de los aceptados.
-#TODO: "Error: Numbers must only contain digits." si los operandos no son digitos numericos.
-#TODO: "Error: Numbers cannot be more than four digits." si algun operando tiene mas de 4 digitos
+#"Error: To many problems." si hay mas de 5 operaciones.
+#"Error: Operator must be '+' or '-'." si el operador difiere de los aceptados.
+#"Error: Numbers must only contain digits." si los operandos no son digitos numericos.
+#"Error: Numbers cannot be more than four digits." si algun operando tiene mas de 4 digitos
 
 #Condiciones
 #TODO: El operador tendra una separacion de un espacio con referencia al operando mas largo y estara en la misma linea del segundo operando
@@ -29,14 +29,34 @@ def tamaño(bloque):
 
 
 ##########Main
-operaciones=["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]
+operaciones=["56 + 698", "38018 - 2", "45 + 43", "123 - 49"]
 
 
-##########
-for op in operaciones:
-    print('operacion:',op)
-    #en cada iteracion se tiene una operacion en forma de cadena de texto
-    ops=op.split()
-    x=tamaño(ops)
+if len(operaciones)<5:
+    for op in operaciones:
+        #print('operacion:',op)
+        #en cada iteracion se tiene una operacion en forma de cadena de texto
+        ops=op.split()
+        if ops[1]=='+' or ops[1]=='-':
+            if ops[0].isdigit() and ops[2].isdigit():
+                if tamaño(ops)<5:
+                    ####
+
+                else:
+                    print("Error: Numbers cannot be more than four digits.")
+                    break
+            else:
+                print("Error: Numbers must only contain digits.")
+                break 
+
+        else:
+            print("Error: Operator must be '+' or '-'.")
+            break
+
+
+else:
+    print("Error: Too many problems")
+
+
 
 
