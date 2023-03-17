@@ -27,9 +27,12 @@ def tamaño(bloque):
         bigger=len(bloque[2])
     return bigger
 
+        
+    
+
 
 ##########Main
-operaciones=["56 + 698", "38018 - 2", "45 + 43", "123 - 49"]
+operaciones=["56 + 698", "3801 - 2", "45 + 43", "123 - 49"]
 
 
 if len(operaciones)<5:
@@ -39,8 +42,10 @@ if len(operaciones)<5:
         ops=op.split()
         if ops[1]=='+' or ops[1]=='-':
             if ops[0].isdigit() and ops[2].isdigit():
-                if tamaño(ops)<5:
-                    ####
+                cant=tamaño(ops)
+                if cant<5:
+                    print(ops[0],"\n",ops[1], ops[2],"\n","----")
+                    print(end=" ")
 
                 else:
                     print("Error: Numbers cannot be more than four digits.")
@@ -52,7 +57,6 @@ if len(operaciones)<5:
         else:
             print("Error: Operator must be '+' or '-'.")
             break
-
 
 else:
     print("Error: Too many problems")
